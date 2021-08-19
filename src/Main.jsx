@@ -1,7 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 import Messenger from "./Components/Messenger";
+import { Link } from "react-router-dom";
 
 const news = ['Abdullah Khokhar', 'UofT CS Specialist', 'Software Developer', 'Cricket Lover'];
 const today = new Date().toLocaleDateString()
@@ -11,9 +12,8 @@ const Landing = ({ className }) => (
 		<div className="container">
 			<div className="container-bottom">
 				<p><strong>[abdullahkhokhar ~]$</strong> echo <b>$WELCOME</b></p>
-				<p>Welcome, my name is Abdullah Khokhar! you've come to my portfolio.</p>
+				<p>My name is Abdullah Khokhar. Welcome! you've arrived at my portfolio. Check out the <Link to="/about" >about</Link> section to get to know me better 😊</p>
 				<p><strong>[abdullahkhokhar ~]$</strong> status</p>
-
 
 				<div className="ascii-box">
                 <pre className="ascii">
@@ -31,9 +31,9 @@ const Landing = ({ className }) => (
 					<li>-------------</li>
 					<li><strong className="info">OS</strong>: macOS x86_64</li>
 					<li><strong className="info">Kernel</strong>: 10.0.0-popcorn</li>
-					<li><strong className="info">Date</strong>: {today}</li>
 					<li><strong className="info">Shell</strong>: bash 5.0.11</li>
-					<li><strong className="info">Status</strong>: Searching for Internship</li>
+					<li><strong className="info">Date</strong>: {today}</li>
+					<li className= "pulsate"><strong className="info">Status</strong>: Seeking FT SWE Starting Sep '22</li>
 					<br />
 					<li className="palette">
 						<div className="palette-box colour-1"></div>
@@ -45,19 +45,30 @@ const Landing = ({ className }) => (
 				</ul>
 				</div>
 
+				<p><strong>[abdullahkhokhar ~]$</strong> contact</p>
+				<p>email: <a href="mailto:abdullahk786@hotmail.com" target="_blank" rel="noreferrer">abdullahk786@hotmail.com</a></p>
+				<p>phone: 647-534-4472</p>
+
 
 				<p><strong>[abdullahkhokhar ~]$</strong> social</p>
 				<ul>
-                <li className="social-list"><a className="social-a"href="http://github.com/abdullahkhokhar" target="_blank" rel="noopener noreferrer"><i className="fa fa-github"></i></a></li>
-                <li className="social-list"><a className="social-a"href="http://linkedin.com/in/abdullah-k/" target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                <li className="social-list"><a className="social-a"href="https://medium.com/@abdullahk786.cs" target="_blank" rel="noopener noreferrer"><i className="fa fa-medium" aria-hidden="true"></i></a></li>
+                <li className="social-list"><a className="social-a"href="http://github.com/abdullahkhokhar" target="_blank" rel="noopener noreferrer"><i className="fa fa-github github-i"></i></a></li>
+                <li className="social-list"><a className="social-a"href="http://linkedin.com/in/abdullah-k/" target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin linkedin-i" aria-hidden="true"></i></a></li>
+                <li className="social-list"><a className="social-a"href="https://medium.com/@abdullahk786.cs" target="_blank" rel="noopener noreferrer"><i className="fa fa-medium medium-i" aria-hidden="true"></i></a></li>
             	</ul>
+
 				<p><strong>[abdullahkhokhar ~]$</strong> whoami</p>
 				<p><Messenger news={news}/></p>
 			</div>
 		</div>
 	</div>
 );
+
+const breatheAnimation = keyframes`
+ 0% { opacity: 0.5; }
+ 50% { opacity: 1.0; }
+ 100% { opacity: 0.5; }
+`
 
 const StyledLanding = styled(Landing)`
 	.social-list {
@@ -67,7 +78,6 @@ const StyledLanding = styled(Landing)`
 	}
 
 	.social-list i {
-		color: #363537;
 		padding: 3px;
 		text-align: center;
 		font-size: 1.3em;
@@ -155,6 +165,35 @@ const StyledLanding = styled(Landing)`
 		position: relative;
 		top: 50%;
 		padding-left: 10%;
+	}
+
+	a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #E7BB41;
+    }
+
+	status {
+		background: black;
+	}
+
+	.pulsate {
+		animation-name: ${breatheAnimation};
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+		opacity: 0.5;
+	}
+
+	.github-i {
+		color: #333;
+	}
+
+	.linkedin-i {
+		color: #0e76a8;
+	}
+
+	.medium-i {
+		color: #00ab6c;
 	}
 `;
 

@@ -16,9 +16,9 @@ const Header = props => {
                 <li>
                     <Link to="/blog" className={location.pathname === "/blog"  ? "active" : ""}>blog</Link>
                 </li>
-                {/* <li>
-                    <a target="_blank" href={Resume}>resume</a>
-                </li> */}
+                <li>
+                    <a target="_blank" href="https://drive.google.com/file/d/16Ow_P9XZHg7-v16V713NpK0nRZ-VZXDj/view?usp=sharing">resume</a>
+                </li>
             </ul>
         </nav>
     )
