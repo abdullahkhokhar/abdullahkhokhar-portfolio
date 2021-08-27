@@ -2,13 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import { Link, useLocation } from "react-router-dom";
 
-const Header = props => {
+const blogRegex = /^\/blog$|^(\/blog\/)/;
+
+const Header = (props) => {
     const location = useLocation(); 
     return(
         <nav className={props.className}>
             <ul className="nav-ul">
                 <li>
-                    <Link to="/" className={location.pathname !== "/about" ? "active" : ""}>home</Link>
+                    <Link to="/" className={location.pathname !== "/about" && !blogRegex.test(location.pathname)  ? "active" : ""}>home</Link>
                 </li>
                 <li>
                     <Link to="/about" className={location.pathname === "/about" ? "active" : ""}>about</Link>
@@ -17,7 +19,7 @@ const Header = props => {
                     <Link to="/blog" className={location.pathname === "/blog"  ? "active" : ""}>blog</Link>
                 </li>
                 <li>
-                    <a target="_blank" href="https://drive.google.com/file/d/16Ow_P9XZHg7-v16V713NpK0nRZ-VZXDj/view?usp=sharing">resume</a>
+                    <a target="_blank" href="https://drive.google.com/file/d/16Ow_P9XZHg7-v16V713NpK0nRZ-VZXDj/view?usp=sharing" rel="noreferrer">resume</a>
                 </li>
             </ul>
         </nav>
@@ -40,14 +42,14 @@ const StyledHeader = styled(Header)`
     .nav-ul {
         list-style-type: none;
         text-align: center;
-        font-size: 1.3em;
+        font-size: 1.2em;
         padding: 0px 20px;
         margin: 2em 0em 0em 0em;
     }
 
     li {
         display: inline-block;
-        font-family: monospace;
+        font-family: monospace, monospace;
     }
 
     a {

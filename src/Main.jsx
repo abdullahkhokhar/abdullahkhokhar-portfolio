@@ -3,18 +3,25 @@ import React from "react";
 import styled, {keyframes} from "styled-components";
 import Messenger from "./Components/Messenger";
 import { Link } from "react-router-dom";
+import oracleLogo from "./assets/oracle.png";
+import awsLogo from "./assets/aws.png";
 
 const news = ['Abdullah Khokhar', 'UofT CS Specialist', 'Software Developer', 'Cricket Lover'];
-const today = new Date().toLocaleDateString()
 
 const Landing = ({ className }) => (
 	<div className={className}>
 		<div className="container">
 			<div className="container-bottom">
 				<p><strong>[abdullahkhokhar ~]$</strong> echo <b>$WELCOME</b></p>
-				<p>My name is Abdullah Khokhar. Welcome! you've arrived at my portfolio. Check out the <Link to="/about" >about</Link> section to get to know me better 😊</p>
-				<p><strong>[abdullahkhokhar ~]$</strong> status</p>
+				<p>My name is Abdullah Khokhar. Welcome! Check out the <Link to="/about" >about</Link> section to get to know me better 😊</p>
+				
+				<p><strong>[abdullahkhokhar ~]$</strong> experience</p>
+				<p>SDE Intern at <img src={awsLogo} alt="AWS" width="30" height="auto" /></p>
+				<p>SWE Intern at <img src={oracleLogo} alt="Oracle" width="60" height="auto" /></p>
+				<p>Software Developer and Buisness Systems Analyst Intern at <span className="savaria">Savaria</span></p>
 
+
+				<p><strong>[abdullahkhokhar ~]$</strong> status</p>
 				<div className="ascii-box">
                 <pre className="ascii">
                 ______         __    __<br />
@@ -29,10 +36,9 @@ const Landing = ({ className }) => (
 				<ul className="fetch-info">
 					<li><strong className="name info">abdullahkhokhar</strong></li>
 					<li>-------------</li>
-					<li><strong className="info">OS</strong>: macOS x86_64</li>
-					<li><strong className="info">Kernel</strong>: 10.0.0-popcorn</li>
-					<li><strong className="info">Shell</strong>: bash 5.0.11</li>
-					<li><strong className="info">Date</strong>: {today}</li>
+					<li><strong className="info">OS</strong>: University of Toronto</li>
+					<li><strong className="info">Kearnel</strong>: Specialist Computer Science</li>
+					<li><strong className="info">Shell</strong>: Honours Bachelor of Science</li>
 					<li className= "pulsate"><strong className="info">Status</strong>: Seeking FT SWE Starting Sep '22</li>
 					<br />
 					<li className="palette">
@@ -44,15 +50,10 @@ const Landing = ({ className }) => (
 					</li>
 				</ul>
 				</div>
-
-				<p><strong>[abdullahkhokhar ~]$</strong> contact</p>
-				<p>email: <a href="mailto:abdullahk786@hotmail.com" target="_blank" rel="noreferrer">abdullahk786@hotmail.com</a></p>
-				<p>phone: 647-534-4472</p>
-
-
+				
 				<p><strong>[abdullahkhokhar ~]$</strong> social</p>
 				<ul>
-                <li className="social-list"><a className="social-a"href="http://github.com/abdullahkhokhar" target="_blank" rel="noopener noreferrer"><i className="fa fa-github github-i"></i></a></li>
+                <li className="social-list"><a className="social-a"href="http://github.com/abdullahkhokhar" target="_blank" rel="noopener noreferrer"><i className="fab fa-github github-i"></i></a></li>
                 <li className="social-list"><a className="social-a"href="http://linkedin.com/in/abdullah-k/" target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin linkedin-i" aria-hidden="true"></i></a></li>
                 <li className="social-list"><a className="social-a"href="https://medium.com/@abdullahk786.cs" target="_blank" rel="noopener noreferrer"><i className="fa fa-medium medium-i" aria-hidden="true"></i></a></li>
             	</ul>
@@ -194,6 +195,11 @@ const StyledLanding = styled(Landing)`
 
 	.medium-i {
 		color: #00ab6c;
+	}
+
+	.savaria{
+		color: #81C22F;
+		font-weight: bold;
 	}
 `;
 

@@ -1,10 +1,7 @@
 import React from "react";
 import Header from './Header';
+import FixedContent from './Components/FixedContent'
 import { createGlobalStyle } from 'styled-components';
-
-const mainBoxStyle = {
-    width: "100%"
-}
 
 const GlobalLayoutStyle = createGlobalStyle`
     body { 
@@ -55,9 +52,9 @@ const Layout = props => {
         <div className = "top">
             <GlobalLayoutStyle />
             <Header />
-            <div className={props.className} style={mainBoxStyle}>
+            <FixedContent>
                 {props.children}
-            </div>
+            </FixedContent>
         </div>
     );
 }

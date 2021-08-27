@@ -8,7 +8,7 @@ import {
 import Layout from "./Layout";
 import Main from "./Main";
 import About from "./Components/About"
-import Blog from "./Components/Blog"
+import Blog from "./Components/BlogView"
 
 function App() {
   return (
