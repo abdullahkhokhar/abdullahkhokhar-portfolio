@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "/abdullahkhokhar-portfolio/static/js/main.e37088a8.chunk.js",
+    "main.js.map": "/abdullahkhokhar-portfolio/static/js/main.e37088a8.chunk.js.map",
+    "runtime-main.js": "/abdullahkhokhar-portfolio/static/js/runtime-main.0bd41dba.js",
+    "runtime-main.js.map": "/abdullahkhokhar-portfolio/static/js/runtime-main.0bd41dba.js.map",
+    "static/js/2.08ff0d16.chunk.js": "/abdullahkhokhar-portfolio/static/js/2.08ff0d16.chunk.js",
+    "static/js/2.08ff0d16.chunk.js.map": "/abdullahkhokhar-portfolio/static/js/2.08ff0d16.chunk.js.map",
+    "index.html": "/abdullahkhokhar-portfolio/index.html",
+    "static/js/2.08ff0d16.chunk.js.LICENSE.txt": "/abdullahkhokhar-portfolio/static/js/2.08ff0d16.chunk.js.LICENSE.txt",
+    "static/media/aws.116b0d26.png": "/abdullahkhokhar-portfolio/static/media/aws.116b0d26.png",
+    "static/media/headshot.0696ef10.jpg": "/abdullahkhokhar-portfolio/static/media/headshot.0696ef10.jpg",
+    "static/media/oracle.65d7cd53.png": "/abdullahkhokhar-portfolio/static/media/oracle.65d7cd53.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0bd41dba.js",
+    "static/js/2.08ff0d16.chunk.js",
+    "static/js/main.e37088a8.chunk.js"
+  ]
+}
