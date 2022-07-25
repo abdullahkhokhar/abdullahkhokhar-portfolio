@@ -16,7 +16,7 @@ const Landing = ({ className }) => (
 				<p>My name is Abdullah Khokhar. Welcome! Check out the <Link to="/about" >about</Link> section to get to know me better 😊</p>
 				
 				<p><strong>[abdullahkhokhar ~]$</strong> experience</p>
-				<p>SDE Intern at <img src={awsLogo} alt="AWS" width="30" height="auto" /></p>
+				<p>Current FT SDE & former SDE Intern at <img src={awsLogo} alt="AWS" width="30" height="auto" /></p>
 				<p>SWE Intern at <img src={oracleLogo} alt="Oracle" width="60" height="auto" /></p>
 				<p>Software Developer and Buisness Systems Analyst Intern at <span className="savaria">Savaria</span></p>
 
@@ -39,7 +39,7 @@ const Landing = ({ className }) => (
 					<li><strong className="info">OS</strong>: University of Toronto</li>
 					<li><strong className="info">Kearnel</strong>: Specialist Computer Science</li>
 					<li><strong className="info">Shell</strong>: Honours Bachelor of Science</li>
-					<li className= "pulsate"><strong className="info">Status</strong>: Seeking FT SWE Starting Sep '22</li>
+					<li className= "pulsate"><strong className="info">Status</strong>: Starting FT @ AWS Aug '22</li>
 					<br />
 					<li className="palette">
 						<div className="palette-box colour-1"></div>

@@ -10,13 +10,16 @@ const Header = (props) => {
         <nav className={props.className}>
             <ul className="nav-ul">
                 <li>
-                    <Link to="/" className={location.pathname !== "/about" && !blogRegex.test(location.pathname)  ? "active" : ""}>home</Link>
+                    <Link to="/" className={location.pathname !== "/about" && location.pathname !== "/research" && !blogRegex.test(location.pathname)  ? "active" : ""}>home</Link>
                 </li>
                 <li>
                     <Link to="/about" className={location.pathname === "/about" ? "active" : ""}>about</Link>
                 </li>
                 <li>
                     <Link to="/blog" className={location.pathname === "/blog"  ? "active" : ""}>blog</Link>
+                </li>
+                <li>
+                    <Link to="/research" className={location.pathname === "/research"  ? "active" : ""}>research</Link>
                 </li>
                 <li>
                     <a target="_blank" href="https://drive.google.com/file/d/16Ow_P9XZHg7-v16V713NpK0nRZ-VZXDj/view?usp=sharing" rel="noreferrer">resume</a>

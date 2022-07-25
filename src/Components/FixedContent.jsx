@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import headshot from "../assets/headshot.jpg";
+import headshot from "../assets/headshot2.jpg";
 
 const FixedContent = props => {
     return (
@@ -10,7 +10,7 @@ const FixedContent = props => {
             {props.children}
 
             <div className="sitemap">
-                <img src={headshot} alt="me" width="120" height="auto" />
+                <img src={headshot} alt="me" width="180" height="auto" style={{borderRadius: 30}}/>
 				<p><a href="mailto:abdullahk786@hotmail.com" target="_blank" rel="noreferrer"><span className="email-icon" >📧 </span><span className="email">abdullahk786@hotmail.com</span></a></p>
 				<p className = "phone"><strong>📞</strong> 647-534-4472</p>
             </div>

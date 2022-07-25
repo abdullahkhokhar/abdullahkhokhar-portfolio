@@ -9,6 +9,7 @@ import Layout from "./Layout";
 import Main from "./Main";
 import About from "./Components/About"
 import Blog from "./Components/BlogView"
+import Research from "./Components/Research"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route exact path = "/" component={Main}/>
           <Route exact path="/about" component={About} />
           <Route exact path="/blog" component={Blog} />
+          <Route exact path="/research" component={Research} />
         </Switch>
       </Layout>
     </Router>

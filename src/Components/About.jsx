@@ -9,9 +9,9 @@ const About = ({ className }) => (
             <div className="container-bottom">
                 <p><strong>[abdullahkhokhar ~]$</strong> cat about.md</p>
                 <p>Hey, it's nice to meet you.</p>
-                <p>My name is Abdullah Khokhar. I’m a 21 year old in my final year at the <strong className="uoft">University of Toronto</strong>, enrolled in the Specialist Computer Science program.</p>
+                <p>My name is Abdullah Khokhar, a recent graduate with high distinction from <strong className="uoft">University of Toronto's</strong> Specialist Computer Science program.</p>
                 <br />
-                <p>I’ve recently concluded an internship as a Software Development Engineer at <a href="https://aws.amazon.com" target="_blank">AWS</a>, part of the AWS Insights and Commerce Platform organization. During this time, I designed, engineered, and launched a web application enabling the interaction with key AWS Commerce Platform owned services, providing access to AWS invoice details and enabling the ability to perform various statement modifications.</p>
+                <p>In 2021, I concluded a summer internship as a Software Development Engineer at <a href="https://aws.amazon.com" target="_blank">AWS</a>, part of the AWS Insights and Commerce Platform organization. During this time, I designed, engineered, and launched a web application enabling the interaction with key AWS Commerce Platform owned services, providing access to AWS invoice details and enabling the ability to perform various statement modifications.</p>
                 <p>I also proudly designed a server-less stack for the application’s infrastructure, making use of AWS Services such as 
                     <a href="https://aws.amazon.com/route53/" target="_blank"> Route 53</a>, 
                     <a href="https://aws.amazon.com/api-gateway/" target="_blank"> API Gateway</a>, 
@@ -24,6 +24,9 @@ const About = ({ className }) => (
                 <br />
                 <p>I love to play Cricket🏏, it’s something I live and breathe.</p> 
                 <p>During the summer between 6:00am-8:00pm I’m almost never home, I’m out playing multiple games in Ontario’s domestic Cricket setup. Check me out on <a href="https://www.youtube.com/channel/UCsxEj2EH_yEdcbdCJ2-Dr1g" target="_blank"> youtube</a>, you’ll find some videos of me playing!</p>
+                <br />
+                <p>I'm proud to say I will be returning to Amazon's AWS org and starting career as a full time SDE this 22' summer!</p>
+
                 <ul>
                     <li>Email: <a href="mailto:abdullahk786@hotmail.com" target="_blank" rel="noreferrer"> abdullahk786@hotmail.com</a></li>
                     <li>Phone Number: (647) 534-4472</li>
